@@ -1,0 +1,71 @@
+﻿body {
+    background-color: cornflowerblue;
+    height: 1000px;
+    z-index: -1;
+}
+
+#title {
+    position: relative;
+    width: 30%;
+    margin-left: 35%;
+    
+}
+
+#subHeading {
+    position: relative;
+    width: 30%;
+    margin-left: 35%;
+}
+
+#sodokuGrid {
+    position: relative;
+    z-index: 0;
+    height: 33%;
+    width: 33%;
+    margin-left: 5%;
+    margin-top: 10%;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    border: solid;
+    border-width: 2px;
+    border-color: darkgrey;
+}
+
+.innerBox {
+    display: grid;
+    z-index: inherit;
+    align-items: stretch;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    border: solid;
+    border-width: 2px;
+    border-color: darkgrey;
+}
+
+.gridBox {
+    position: relative;
+    z-index: inherit;
+    border: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+    text-align: center;
+    background-color: white;
+    vertical-align: middle;
+    font-size: large;
+    font-family: 'Trebuchet MS';
+}
+
+#crtlPanel {
+    position: relative;
+    z-index: 1;
+    height: 33%;
+    width: 33%;
+    margin-left: 60%;
+    margin-top: 10%;
+    background-color: white;
+    border: solid;
+    border-color: darkgrey;
+    border-width: 2px;
+}
